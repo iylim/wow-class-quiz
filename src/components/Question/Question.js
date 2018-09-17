@@ -10,7 +10,7 @@ class Question extends Component {
         {this.props.q.answers.map(a => {
           return(
             <div className="answers">
-              <button onClick={ e => this.props.handleAnswer}>{a.content}</button>
+              <button onClick={() => this.props.handleAnswer(a.type)}>{a.content}</button>
             </div>
           )}
           )}

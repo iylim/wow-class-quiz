@@ -13,19 +13,19 @@ class App extends Component {
       answers: [
         {
           type: "tank",
-          content: "Fight it",
+          content: "Fight It!",
         },
         {
           type: "melee",
-          content: "Sneak past it",
+          content: "Sneak By Like A Ninja.",
         },
         {
           type: "ranged",
-          content: "look at it from far away",
+          content: "Look At It From Far Away.",
         },
         {
           type: "healer",
-          content: "do nothing, cant kill it anyways",
+          content: "Do Nothing, Cant Kill It Anyways.",
         }
       ]
     }
@@ -39,12 +39,16 @@ class App extends Component {
     this.setState({results: results})
   }
 
+  handleNext = () => {
+
+  }
+
   render() {
     return (
       <div className="App">
        <header className="App-header">
-        <h1>Which <br /> 
-          World of Warcraft <br/>
+        <h1>Which
+          <img width="140"src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/3/37/Battle_for_Azeroth_logo.png/405px-Battle_for_Azeroth_logo.png?version=f26fa464015ed321a694dc05057d6ee5"/> 
           Class Should You Play?</h1>
       </header>
       {this.state.questions.map(q => {
