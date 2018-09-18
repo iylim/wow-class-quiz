@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Route, Link} from 'react-router-dom';
 import Question from '../../components/Question/Question';
 import './App.css';
 
@@ -9,26 +8,67 @@ class App extends Component {
     super(props);
     this.state = {
       questions: [
-      {question: "What would you do when you see a wild animal?",
+        {
+          question: "Who would you bring with you to Azeroth?",
+          answers: [
+            {
+              type: "T",
+              content: "No one, I am indestructable.",
+            },
+            {
+              type: "M",
+              content: "Whoever, as long as they dont get in my way.",
+            },
+            {
+              type: "R",
+              content: "I'll get a pet to do all the work for me.",
+            },
+            {
+              type: "H",
+              content: "A small group of my closest friends.",
+            }
+          ]
+        },{
+      question: "What would you do when you see a boar?",
       answers: [
         {
-          type: "tank",
+          type: "T",
           content: "Fight It!",
         },
         {
-          type: "melee",
+          type: "M",
           content: "Sneak By Like A Ninja.",
         },
         {
-          type: "ranged",
+          type: "R",
           content: "Look At It From Far Away.",
         },
         {
-          type: "healer",
+          type: "H",
           content: "Do Nothing, Cant Kill It Anyways.",
         }
       ]
-    }
+    }, {
+      question: "You come across a wanted poster, how do you proceed?",
+      answers: [
+        {
+          type: "T",
+          content: "Hmm sure but it probably wont be easy.",
+        },
+        {
+          type: "M",
+          content: "Easy Money!",
+        },
+        {
+          type: "R",
+          content: "I can probably use the reward money.",
+        },
+        {
+          type: "H",
+          content: "Look for others who want to join the fight.",
+        }
+      ]
+      }
     ],
       results: []
     }
