@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 
 class Question extends Component {
+  
   render() {
-    console.log(this.props.q);
     return (
       <div className="questions">
       <h1>{this.props.q.question}</h1>
         <div className="answerOptions">
-        {this.props.q.answers.map(a => {
+        {this.props.q.answers.map((a, idx) => {
           return(
-            <div className="answers">
-              <button onClick={() => this.props.handleAnswer(a.type)}>{a.content}</button>
+            <div key={idx} className="answers">
+              <button onClick={() => this.props.handleAnswer(a.value)}>{a.content}</button>
             </div>
           )}
           )}
