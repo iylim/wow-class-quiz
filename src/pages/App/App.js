@@ -68,6 +68,32 @@ class App extends Component {
         }
       ]
       }, {
+        question: "What special ability would you have?",
+        answers: [ 
+          {
+            value: 0,
+            content: "Skin made of stone.",
+          },
+          {
+            value: 3,
+            content: "Lightning Speed.",
+          },
+          {
+            value: 1,
+            content: "Super Strength.",
+          },
+          {
+            value: 2,
+            content: "Wings.",
+          }
+        ]
+      }, {
+        question: "",
+        answers: []
+      }, {
+        question: "",
+        answers: []
+      }, {
         question: "",
         answers: []
       }, {
@@ -92,10 +118,11 @@ class App extends Component {
   // scoreResults = () => {
   // DK 0-1
   // demon hunters 2-4
-  // warrior 5-7
-  // pally 8-10
-  // druid 11-13 
-  // monk 14-16
+  // warrior 5-7 
+  // pally 8-9
+  // rogues 10-11
+  // monk 12-13 
+  // druid 14-16
   // shaman 17-19 
   // priest 20-22
   // lock 23-25 
