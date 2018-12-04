@@ -107,12 +107,17 @@ class App extends Component {
         answers: []
       }
     ],
-      totalValue: 0
+      totalValue: 0,
+      selectedAnswers: []
     }
   }
+  //total answer values 
+  // handleAnswer = () => {
+  //   this.setState({totalValue: this.state.totalValue + })
+  // }
 
-  handleAnswer = (e) => {
-    this.setState({totalValue: this.state.totalValue + e})
+  handleSelectedAnswer = (e) => {
+    this.state.selectedAnswers.push(e);
   }
 
   // scoreResults = () => {
